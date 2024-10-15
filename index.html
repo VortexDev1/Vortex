@@ -9,7 +9,6 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            display: flex;
         }
 
         /* Sidebar styling */
@@ -19,7 +18,8 @@
             background-color: #111;
             position: fixed;
             top: 0;
-            left: 0;
+            left: -250px;
+            transition: 0.3s;
             display: flex;
             flex-direction: column;
             padding-top: 20px;
@@ -36,65 +36,3 @@
 
         .sidebar a:hover {
             background-color: #575757;
-            color: white;
-        }
-
-        /* Content section */
-        .content {
-            margin-left: 250px;
-            padding: 20px;
-        }
-
-        header h1 {
-            color: #333;
-        }
-    </style>
-</head>
-<body>
-    <div class="sidebar">
-        <a href="#home">Home</a>
-        <a href="#scripts">Scripts</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </div>
-
-    <div class="content">
-        <header>
-            <h1>Vpanel Releases</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#scripts">Scripts</a></li>
-                    <li><a href="#about">About</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section id="home">
-                <h2>Welcome to my Website</h2>
-                <p>Here you can download my own hacks for Blockman Go.<br>If I get good support from you, I will make hacks for other games too.</p>
-            </section>
-            <section id="scripts">
-                <h2>Scripts</h2>
-                <div class="script">
-                    <h3>Vpanel 1.8.5</h3>
-                    <p>What's new<br>°Bypass fixed <br>°Some testing functions</p>
-                    <a href="Vpanel1.8.5.zip" class="btn download">Download</a>
-                </div>
-                <div class="script">
-                    <h3>Vpanel 1.8.6 (coming soon)</h3>
-                    <p>What's new</p>
-                    <a href="Nothing.zip" class="btn download">Download</a>
-                </div>
-            </section>
-            <section id="about">
-                <h2>About Me</h2>
-                <p>I am VortexHacker, and I'm here creating hacks for Blockman Go and the latest anti-cheat systems.</p>
-            </section>
-        </main>
-        <footer>
-            <p>&copy; 2024 VortexHacker and OMGITSTX. All rights reserved.</p>
-        </footer>
-    </div>
-</body>
-</html>
