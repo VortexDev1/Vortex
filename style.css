@@ -4,7 +4,6 @@ body {
     color: #fff; /* White text */
     margin: 0;
     padding: 0;
-    transition: background-color 0.5s, color 0.5s; /* Smooth transitions */
 }
 
 header {
@@ -19,19 +18,28 @@ header h1 {
     animation: glow 1.5s infinite alternate; /* Neon glow effect */
 }
 
-nav.sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 200px;
-    height: 100%;
-    background-color: #222;
-    padding-top: 20px;
-    transition: transform 0.3s ease-in-out; /* Slide-in animation */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FF0033; /* Red links */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #A500FF; /* Change to neon purple on hover */
 }
 
 main {
-    margin-left: 220px; /* Adjust for sidebar */
     padding: 20px;
 }
 
@@ -64,15 +72,17 @@ h2 {
     padding: 10px 15px;
     text-decoration: none;
     border: none;
-    border-radius: 10px;
-    cursor: pointer;transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+    border-radius: 10x;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
 }
 
 .btn:hover {
     animation: rainbow 10s infinite;
     border-radius: 10px;
-    border: 1px solid #ff0000; /* Apply animation on click */
+    border: 1px solid #ff0000;/* Apply animation on click */
 }
+
 
 .btn:active {
     background-color: #A500FF;
@@ -80,6 +90,50 @@ h2 {
     transform: scale(1.1);
     border-radius: 10px;
     box-shadow: 0 0 5px #FF0000, 0 0 10px #ff0000, 0 0 15px #ff0000, 0 0 20px #000000, 0 0 25px #8f0fff, 0 0 30px #4B0082, 0 0 35px #8B00FF; /* Rainbow neon effect */
+}
+
+
+@keyframes rainbow {
+    0% { background-color: #FF0000; /* Red */ }
+    17% { background-color: #FF7F00; /* Orange */ }
+    34% { background-color: #FFFF00; /* Yellow */ }
+    50% { background-color: #00FF00; /* Green */ }
+    67% { background-color: #0000FF; /* Blue */ }
+    84% { background-color: #4B0082; /* Indigo */ }
+    100% { background-color: #8B00FF; /* Violet */ }
+}
+@keyframes glowing {
+  0% {background-position: 0 0;}
+  50% {background-position: 400% 0;}
+  100% {background-position: 0 0;}
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: black; /* Black footer */
+    animation: fadeIn 1s; /* Fade-in animation for footer */
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes glow {
+    0% { text-shadow: 0 0 5px #A500FF, 0 0 10px #A500FF, 0 0 20px #A500FF; }
+    100% { text-shadow: 0 0 10px #A500FF, 0 0 20px #A500FF, 0 0 30px #A500FF; }
 }
 
 .dialog {
