@@ -4,6 +4,7 @@ body {
     color: #fff; /* White text */
     margin: 0;
     padding: 0;
+    transition: background-color 0.5s, color 0.5s; /* Smooth transitions */
 }
 
 header {
@@ -18,28 +19,40 @@ header h1 {
     animation: glow 1.5s infinite alternate; /* Neon glow effect */
 }
 
-nav ul {
+nav.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #222;
+    padding-top: 20px;
+    transition: transform 0.3s ease-in-out; /* Slide-in animation */
+}
+
+nav.sidebar ul {
     list-style-type: none;
     padding: 0;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+nav.sidebar ul li {
+    padding: 10px;
+    text-align: center;
 }
 
-nav a {
+nav.sidebar ul li a {
     text-decoration: none;
     color: #FF0033; /* Red links */
     transition: color 0.3s; /* Smooth color transition */
 }
 
-nav a:hover {
+nav.sidebar ul li a:hover {
     text-decoration: underline;
     color: #A500FF; /* Change to neon purple on hover */
 }
 
 main {
+    margin-left: 220px; /* Adjust for sidebar */
     padding: 20px;
 }
 
@@ -72,17 +85,15 @@ h2 {
     padding: 10px 15px;
     text-decoration: none;
     border: none;
-    border-radius: 10x;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+    border-radius: 10px;
+    cursor: pointer;transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
 }
 
 .btn:hover {
     animation: rainbow 10s infinite;
     border-radius: 10px;
-    border: 1px solid #ff0000;/* Apply animation on click */
+    border: 1px solid #ff0000; /* Apply animation on click */
 }
-
 
 .btn:active {
     background-color: #A500FF;
@@ -93,22 +104,24 @@ h2 {
 }
 
 
-@keyframes rainbow {
-    0% { background-color: #FF0000; /* Red */ }
-    17% { background-color: #FF7F00; /* Orange */ }
-    34% { background-color: #FFFF00; /* Yellow */ }
-    50% { background-color: #00FF00; /* Green */ }
-    67% { background-color: #0000FF; /* Blue */ }
-    84% { background-color: #4B0082; /* Indigo */ }
-    100% { background-color: #8B00FF; /* Violet */ }
-}
-@keyframes glowing {
-  0% {background-position: 0 0;}
-  50% {background-position: 400% 0;}
-  100% {background-position: 0 0;}
+body.light-mode {
+    background-color: #fff; /* Light background */
+    color: #000; /* Dark text */
 }
 
+body.light-mode header {
+    background-color: #f0f0f0; /* Light header */
+}
 
+body.light-mode footer {
+    background-color: #f0f0f0; /* Light footer */
+}
+
+body.light-mode nav.sidebar {
+    background-color: #ddd; /* Light sidebar */
+}
+
+body
 footer {
     text-align: center;
     padding: 20px;
@@ -135,3 +148,14 @@ footer p {
     0% { text-shadow: 0 0 5px #A500FF, 0 0 10px #A500FF, 0 0 20px #A500FF; }
     100% { text-shadow: 0 0 10px #A500FF, 0 0 20px #A500FF, 0 0 30px #A500FF; }
 }
+
+@keyframes rainbow {
+    0% { background-color: #FF0000; /* Red */ }
+    17% { background-color: #FF7F00; /* Orange */ }
+    34% { background-color: #FFFF00; /* Yellow */ }
+    50% { background-color: #00FF00; /* Green */ }
+    67% { background-color: #0000FF; /* Blue */ }
+    84% { background-color: #4B0082; /* Indigo */ }
+    100% { background-color: #8B00FF; /* Violet */ }
+}
+
