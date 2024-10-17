@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const dialog = document.getElementById('update-dialog');
     const closeBtn = document.querySelector('.close-btn');
-    const gotItBtn = document.getElementById('got-it-btn');
+    const gotItBtn = document.getElementById('DoneBtn');
 
     // Show the dialog when the page loads
     dialog.style.display = 'flex';
