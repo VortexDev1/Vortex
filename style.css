@@ -146,10 +146,11 @@ footer p {
     background-color: rgba(0, 0, 0, 0.5);
     justify-content: center;
     align-items: center;
+    animation: fadeIn 1s; 
 }
 
 .dialog-content {
-    background-color: #fff;
+    background-color: #ff0000;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -161,6 +162,8 @@ footer p {
     float: right;
     font-size: 24px;
     cursor: pointer;
+    background-color: #ffff00;
+    border-redius: 10px;
 }
 
 .dialog-content h2 {
