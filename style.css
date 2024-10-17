@@ -30,27 +30,6 @@ nav.sidebar {
     transition: transform 0.3s ease-in-out; /* Slide-in animation */
 }
 
-nav.sidebar ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav.sidebar ul li {
-    padding: 10px;
-    text-align: center;
-}
-
-nav.sidebar ul li a {
-    text-decoration: none;
-    color: #FF0033; /* Red links */
-    transition: color 0.3s; /* Smooth color transition */
-}
-
-nav.sidebar ul li a:hover {
-    text-decoration: underline;
-    color: #A500FF; /* Change to neon purple on hover */
-}
-
 main {
     margin-left: 220px; /* Adjust for sidebar */
     padding: 20px;
