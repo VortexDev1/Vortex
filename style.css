@@ -151,6 +151,7 @@ footer p {
 
 .dialog-content {
     background-color: #A500FF;
+    color: black;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -175,4 +176,16 @@ footer p {
     text-align: left;
     list-style-type: disc;
     padding-left: 20px;
+}
+
+.DoneBtn {
+    color: black;
+    border-redius: 5px;
+    background-color: #ff0000 
+}
+
+.DoneBtn:hover {
+    background-color: #A500FF;
+    border-redius: 0px;
+    color: white;
 }
