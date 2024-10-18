@@ -179,9 +179,14 @@ footer p {
 }
 
 .DoneBtn {
-    color: black;
-    border-redius: 5px;
-    background-color: #ff0000 
+    background-color: #ff0000; /* Red buttons */
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border: none;
+    border-radius: 10x;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; 
 }
 
 .DoneBtn:hover {
