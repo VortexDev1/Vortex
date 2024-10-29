@@ -172,25 +172,3 @@ footer p {
     margin-top: 0;
 }
 
-.dialog-content ul {
-    text-align: left;
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-.DoneBtn {
-    background-color: #ff0000; /* Red buttons */
-    color: white;
-    padding: 10px 15px;
-    text-decoration: none;
-    border: none;
-    border-radius: 10x;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s; 
-}
-
-.DoneBtn:hover {
-    background-color: #A500FF;
-    border-redius: 0px;
-    color: white;
-}
