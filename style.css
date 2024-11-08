@@ -1,175 +1,161 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Body Styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #111; /* Dark background */
-    color: #fff; /* White text */
-    margin: 0;
-    padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #1A0F46;  /* Dark purple background */
+  color: #f1f1f1;
+  line-height: 1.6;
+  padding: 20px;
 }
 
+/* Header */
 header {
-    background-color: black; /* Black header */
-    padding: 20px;
-    text-align: center;
-    animation: fadeIn 1s; /* Fade-in animation */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-color: #2E1D61;  /* Lighter purple */
 }
 
-header h1 {
-    color: #A500FF; /* Neon purple title */
-    animation: glow 1.5s infinite alternate; /* Neon glow effect */
+header .logo h1 {
+  font-size: 30px;
+  color: #D4A5FF;  /* Light purple text */
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
+/* Hero Section */
+.hero {
+  background: url('hero-image.jpg') no-repeat center center/cover;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+.hero .hero-content h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
-nav a {
-    text-decoration: none;
-    color: #FF0033; /* Red links */
-    transition: color 0.3s; /* Smooth color transition */
+.cta-button {
+  padding: 12px 20px;
+  background-color: #D4A5FF; /* Light purple button */
+  border: none;
+  color: #1A0F46;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
-nav a:hover {
-    text-decoration: underline;
-    color: #A500FF; /* Change to neon purple on hover */
+.cta-button:hover {
+  background-color: #B38BFF; /* Darker purple hover */
 }
 
-main {
-    padding: 20px;
+/* Popular Mods Section */
+.popular-mods {
+  padding: 20px;
+  text-align: center;
 }
 
-section {
-    margin: 20px 0;
-    animation: slideIn 0.5s ease-out; /* Slide-in animation for sections */
+.popular-mods h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
 }
 
-h2 {
-    color: #A500FF; /* Neon purple section titles */
+.mod-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
-.script {
-    background-color: #222; /* Dark background for scripts */
-    padding: 15px;
-    border: 1px solid #A500FF; /* Neon purple border */
-    border-radius: 10px;
-    margin: 10px 0;
-    transition: transform 0.3s; /* Smooth scaling */
+.mod-item {
+  background-color: #2E1D61; /* Darker purple box */
+  padding: 15px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 350px;
+  text-align: center;
 }
 
-.script:hover {
-    transform: scale(1.05); /* Scale up on hover */
-    box-shadow: 0 0 5px #A500FF, 0 0 15px #A500FF, 0 0 30px #A500FF; /* Neon effect */
+.mod-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
-.btn {
-    background-color: #ff0000; /* Red buttons */
-    color: white;
-    padding: 10px 15px;
-    text-decoration: none;
-    border: none;
-    border-radius: 10x;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+.mod-item h3 {
+  font-size: 22px;
+  margin-top: 10px;
 }
 
-.btn:hover {
-    animation: rainbow 10s infinite;
-    border-radius: 10px;
-    border: 1px solid #ff0000;/* Apply animation on click */
+.mod-item p {
+  font-size: 16px;
+  margin-top: 5px;
 }
 
-
-.btn:active {
-    background-color: #A500FF;
-    border: 1px solid #ff0000;
-    transform: scale(1.1);
-    border-radius: 10px;
-    box-shadow: 0 0 5px #FF0000, 0 0 10px #ff0000, 0 0 15px #ff0000, 0 0 20px #000000, 0 0 25px #8f0fff, 0 0 30px #4B0082, 0 0 35px #8B00FF; /* Rainbow neon effect */
+.download-button {
+  background-color: #D4A5FF;
+  border: none;
+  color: #1A0F46;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-
-@keyframes rainbow {
-    0% { background-color: #FF0000; /* Red */ }
-    17% { background-color: #FF7F00; /* Orange */ }
-    34% { background-color: #FFFF00; /* Yellow */ }
-    50% { background-color: #00FF00; /* Green */ }
-    67% { background-color: #0000FF; /* Blue */ }
-    84% { background-color: #4B0082; /* Indigo */ }
-    100% { background-color: #8B00FF; /* Violet */ }
-}
-@keyframes glowing {
-  0% {background-position: 0 0;}
-  50% {background-position: 400% 0;}
-  100% {background-position: 0 0;}
+.download-button:hover {
+  background-color: #B38BFF;
 }
 
 
+/* Footer */
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: black; /* Black footer */
-    animation: fadeIn 1s; /* Fade-in animation for footer */
+  text-align: center;
+  padding: 15px;
+  background-color: #2E1D61;
+  color: #D4A5FF;
+  margin-top: 30px;
 }
 
 footer p {
-    margin: 0;
+  font-size: 16px;
 }
 
-/* Keyframes for animations */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
+/* Mobile-friendly adjustments */
+@media (max-width: 768px) {
+  .hero .hero-content h2 {
+    font-size: 20px;
+  }
 
-@keyframes slideIn {
-    from { transform: translateY(20px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
-}
+  .cta-button {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
 
-@keyframes glow {
-    0% { text-shadow: 0 0 5px #A500FF, 0 0 10px #A500FF, 0 0 20px #A500FF; }
-    100% { text-shadow: 0 0 10px #A500FF, 0 0 20px #A500FF, 0 0 30px #A500FF; }
-}
+  .mod-item {
+    width: 90%;
+    padding: 12px;
+  }
 
-.dialog {
-    display: none;
-    position: fixed;
-    color: black;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    justify-content: center;
-    align-items: center;
-    animation: fadeIn 4s; 
-}
+  .mod-item h3 {
+    font-size: 20px;
+  }
 
-.dialog-content {
-    background-color: #9C27B0;
-    color: black;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    width: 80%;
-    max-width: 400px;
+  .category-item {
+    font-size: 16px;
+    padding: 12px 15px;
+  }
 }
-
-.close-btn {
-    float: right;
-    font-size: 24px;
-    color: black;
-    cursor: pointer;
-    background-color: #9C27B0;
-    border-redius: 10px;
-}
-
-.dialog-content h2 {
-    margin-top: 0;
-}
-
