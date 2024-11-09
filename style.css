@@ -5,6 +5,18 @@
   box-sizing: border-box;
 }
 
+/* Slide Up Animation */
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 /* General Body Styling */
 body {
   font-family: 'Arial', sans-serif;
@@ -12,6 +24,9 @@ body {
   color: #f1f1f1;
   line-height: 1.6;
   padding: 20px;
+  
+  /* Slide Up Animation */
+  animation: slideUp 1s ease-out;  /* Adjust duration and easing as needed */
 }
 
 /* Header */
@@ -38,6 +53,9 @@ header .logo h1 {
   text-align: center;
   color: white;
   padding: 20px;
+  
+  /* Slide Up Animation */
+  animation: slideUp 1s ease-out;  /* Optional: Apply this animation to the hero section */
 }
 
 .hero .hero-content h2 {
@@ -65,6 +83,9 @@ header .logo h1 {
 .popular-mods {
   padding: 20px;
   text-align: center;
+  
+  /* Slide Up Animation */
+  animation: slideUp 1s ease-out;  /* Optional: Apply this animation to the mods section */
 }
 
 .popular-mods h2 {
@@ -119,7 +140,6 @@ header .logo h1 {
 .download-button:hover {
   background-color: #B38BFF;
 }
-
 
 /* Footer */
 footer {
