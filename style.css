@@ -6,16 +6,15 @@
 }
 
 /* Slide Up Animation */
-@keyframes slideUp {
+@keyframes fadeIn {
   from {
-    transform: translateY(100%);
     opacity: 0;
   }
   to {
-    transform: translateY(0);
     opacity: 1;
   }
 }
+
 
 /* General Body Styling */
 body {
@@ -26,7 +25,7 @@ body {
   padding: 20px;
   
   /* Slide Up Animation */
-  animation: slideUp 1s ease-out;  /* Adjust duration and easing as needed */
+  animation: fadeIn 1s ease-out;  /* Adjust duration and easing as needed */
 }
 
 /* Header */
