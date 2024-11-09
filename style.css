@@ -25,7 +25,7 @@ body {
   padding: 20px;
   
   /* Slide Up Animation */
-  animation: fadeIn 1s ease-out;  /* Adjust duration and easing as needed */
+  animation: fadeIn 1s;  /* Adjust duration and easing as needed */
 }
 
 /* Header */
