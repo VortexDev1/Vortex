@@ -1,47 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>VortexHacks - Game Mods</title>
-  <link rel="stylesheet" href="style.css">
+  <title>VortexDev Modes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="gg.css">
+  <style>
+    /* Add your custom CSS here */
+  </style>
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <div class="logo">
-      <h1>VortexHacks</h1>
+  <div class="header">
+    <a class="Gggg">VortexWeb</a>
+    <div class="burger-menu" id="burger-menu" onclick="toggleMenu()">
+      &#9776;
     </div>
-  </header>
+    <div class="links" id="menu-links">
+      <a class="aboutbtn">About</a>
+      <a class="downloadbtn">Downloads</a>
+      <button class="linksY">YouTube</button>
+      <button class="linksD">Discord</button>
+    </div>
+  </div>
+  
+  <!--content of site-->
+  <div class="content">
+    <h2>Start downloading our mods!</h2>
+    <h3>Vmods is always better!</h3>
+    <button class="button1">Go to mods</button>
+  </div>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <h2>Discover and Download Mods for Your Favorite Games</h2>
-      <button class="cta-button">Browse Mods</button>
+  <!--about section-->
+  <section class="about">
+    <h2>About:</h2>
+    <h3>My name is VortexHacker, this is a website for downloading mods for games or apps and trying out our website</h3>
+    <h4>Note: Some mods are not created by me</h4>
+  </section>
+
+  <!--Mods section-->
+  <h2 class="shoyib">All Mods for games</h2>
+  <section class="mods">
+    <div class="modeI">
+      <img class="img" src="imgs/mod1.png">
+      <h3>Mpanel 1.5.3</h3>
+      <p>This is an admin panel for cheats with UI you can understand</p>
+      <p class="states1">Coming Soon</p>
+      <button class="button2" data-file="Mpanel1.5.3.zip">Download</button>
     </div>
   </section>
 
-  <!-- Popular Mods Section -->
-  <section class="popular-mods">
-    <h2>Popular Mods</h2>
-    <div class="mod-list">
-      <div class="mod-item">
-        <img src="bg.png" alt="Blockman Go">
-        <h3>Vpanel 1.8.5</h3>
-        <p>Give you a better UI with all functions you need</p>
-        <button class="download-button">Download</button>
-      <!-- Add more mod items here -->
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2024 VortexHacker & OMGITSTX. All rights reserved.</p>
+  <footer class="footer">
+    <p>&copy; 2024 VortexHacks & OMGITSTX. All rights reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="JavaScript.js"></script>
 </body>
 </html>
