@@ -42,5 +42,5 @@ document.querySelectorAll('.button2').forEach(button => {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-  };
-};
+  });
+});
