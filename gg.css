@@ -70,7 +70,9 @@ body {
 }
 
 /* Burger menu styles for small screens */
-@media (max-width: 768px) {
+@media only screen and (max-width: 414px), 
+       only screen and (max-width: 375px), 
+       only screen and (max-width: 360px) {
   .burger-menu {
     display: block; /* Show burger menu on small screens */
   }
@@ -202,7 +204,9 @@ body {
 }
 
 /* Responsive Adjustments */
-@media (max-width: 768px) {
+@media only screen and (max-width: 414px), 
+       only screen and (max-width: 375px), 
+       only screen and (max-width: 360px) {
   .modeI {
     width: 100%; /* Full width for small screens */
   }
