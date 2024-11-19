@@ -44,3 +44,4 @@ document.querySelectorAll('.button2').forEach(button => {
     document.body.removeChild(link);
   });
 });
+              
