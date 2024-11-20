@@ -16,6 +16,9 @@ document.querySelector('.aboutbtn').addEventListener('click', function() {
     behavior: 'smooth'
   });
 });
+document.querySelector('.Gggg').addEventListener('click', function() {
+  window.open('index.html');
+});
 
 document.querySelector('.downloadbtn').addEventListener('click', function() {
   window.scrollTo({
