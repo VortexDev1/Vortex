@@ -35,14 +35,18 @@ document.querySelector('.linksD').addEventListener('click', function() {
   window.open('https://www.discord.com', '_blank');
 });
 
-document.querySelector('.button2').addEventListener('click', function() {
-  const filePath = this.getAttribute('data-file'); // Get the URL from the data-file attribute
-  if (filePath) { // Check if the attribute exists
-    window.open(filePath, '_blank'); // Open the URL in a new tab
-  } else {
-    console.error('No URL specified in the data-file attribute.');
-  }
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelector('.button2').addEventListener('click', function () {
+    const filePath = this.getAttribute('data-file');
+    alert(`Opening URL: ${filePath}`);
+    if (filePath) {
+      window.open(filePath, '_blank');
+    } else {
+      alert('No URL specified in the data-file attribute.');
+    }
+  });
 });
+
 
     
 /*
