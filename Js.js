@@ -35,6 +35,12 @@ document.querySelector('.linksD').addEventListener('click', function() {
   window.open('https://www.discord.com', '_blank');
 });
 
+document.querySelector('.button2').addEventListener('click', function() {
+  const filePath = button.getAttribute('data-file');
+  window.open(filePath, '_blank');
+});
+    
+/*
 document.querySelectorAll('.button2').forEach(button => {
   button.addEventListener('click', function() {
     const filePath = button.getAttribute('data-file');
@@ -47,4 +53,4 @@ document.querySelectorAll('.button2').forEach(button => {
     document.body.removeChild(link);
   });
 });
-              
+ */
