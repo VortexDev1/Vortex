@@ -36,25 +36,25 @@ document.querySelector('.linksD').addEventListener('click', function() {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
+  console.log('DOM fully loaded!');
+
   const buttons = document.querySelectorAll('.button2');
   console.log(`Found ${buttons.length} buttons.`);
 
   buttons.forEach((button, index) => {
     console.log(`Adding click listener to button ${index + 1}`);
+
     button.addEventListener('click', function () {
-      const url = this.getAttribute('data-file');
-      console.log(`Button ${index + 1} clicked. URL: ${url}`);
-      if (url) {
-        window.open(url, '_blank');
+      const filePath = this.getAttribute('data-file');
+      console.log(`Button ${index + 1} clicked. URL: ${filePath}`);
+
+      if (filePath) {
+        window.open(filePath, '_blank');
       } else {
-        console.error(`Button ${index + 1} does not have a valid URL.`);
+        console.error(`Button ${index + 1} has no valid "data-file" attribute.`);
       }
     });
   });
-
-  if (buttons.length === 0) {
-    console.error('No buttons found.');
-  }
 });
 
 
