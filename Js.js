@@ -36,16 +36,22 @@ document.querySelector('.linksD').addEventListener('click', function() {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  document.querySelector('.button2').addEventListener('click', function () {
-    const filePath = this.getAttribute('data-file');
-    alert(`Opening URL: ${filePath}`);
-    if (filePath) {
-      window.open(filePath, '_blank');
-    } else {
-      alert('No URL specified in the data-file attribute.');
-    }
-  });
+  // Attach a click event listener to the button
+  const button = document.querySelector('.button2');
+  if (button) {
+    button.addEventListener('click', function () {
+      const filePath = this.getAttribute('data-file'); // Get URL from 'data-file'
+      if (filePath) {
+        window.open(filePath, '_blank'); // Open the URL in a new tab
+      } else {
+        console.error('No URL specified in the data-file attribute.');
+      }
+    });
+  } else {
+    console.error('Button with class "button2" not found.');
+  }
 });
+
 
 
     
