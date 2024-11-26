@@ -1,1 +1,1 @@
-{"ver":1.2, "link": "https://www.google.com", "mess": "new update new levels and fix bugs", "last": "true"}
+{"ver":1.1, "link": "https://www.google.com", "mess": "new update new levels and fix bugs"}
