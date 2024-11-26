@@ -1,1 +1,1 @@
-{"ver":1.1, "link": "https://google.com", "mess": "go to google"}
+{"ver":1.2, "link": "https://google.com", "mess": "go to google"}
